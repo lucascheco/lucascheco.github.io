@@ -1,0 +1,160 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.avatar img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-right: 0;
+    border: 3px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.header-content h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.header-content p {
+    margin-bottom: 10px;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-links img {
+    width: 24px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.about,
+.summary,
+.education,
+.work,
+.skills,
+.projects {
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.project-item,
+.work-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.project-item img,
+.work-item img {
+    width: auto;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.project-details a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+a:visited {
+    color: #6610f2;
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 14px;
+    color: #777;
+}
+
+/* Media Queries for Responsive Design */
+@media only screen and (min-width: 768px) {
+    header {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .avatar img {
+        width: 150px;
+        height: 150px;
+        margin-right: 20px;
+    }
+
+    .header-content {
+        text-align: left;
+    }
+
+    .project-item,
+    .work-item {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .project-item img,
+    .work-item img {
+        width: 100px;
+        height: 100px;
+        margin-right: 20px;
+    }
+}
