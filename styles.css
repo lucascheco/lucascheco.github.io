@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Lexend", sans-serif;
 }
 
 body {
@@ -20,6 +21,15 @@ header {
     margin-bottom: 30px;
 }
 
+section {
+    /* Centre section */
+    margin: 0 auto;
+    max-width: 800px;
+
+    /* Add padding top*/
+    padding-top: 20px;
+}
+
 .avatar img {
     width: 200px;
     height: 200px;
@@ -35,7 +45,7 @@ header {
 }
 
 .header-content h1 {
-    font-size: 24px;
+    font-size: 32px;
     margin-bottom: 5px;
     color: #333;
 }
@@ -99,12 +109,12 @@ ul {
 }
 
 .project-details a {
-    color: #007bff;
+    color: rgb(107, 22, 22);
     text-decoration: none;
 }
 
 a {
-    color: #007bff;
+    color: rgb(107, 22, 22);
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -114,7 +124,7 @@ a:hover {
 }
 
 a:visited {
-    color: #6610f2;
+    color: rgb(173, 0, 0);
 }
 
 footer {
@@ -125,6 +135,54 @@ footer {
 footer p {
     font-size: 14px;
     color: #777;
+}
+
+/* bar graph */
+.bar-graph {
+    margin: auto;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 25px;
+}
+
+.technology {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.technology-name {
+    width: 120px;
+    text-align: right;
+    padding-right: 10px;
+    font-weight: bold;
+}
+
+.bar {
+    height: 20px;
+    background-color: rgb(107, 22, 22);
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+}
+
+/* print button */
+#print-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: rgb(107, 22, 22);
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Lexend', sans-serif;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#print-button:hover {
+    background-color: rgb(107, 22, 22);
 }
 
 /* Media Queries for Responsive Design */
