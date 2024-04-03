@@ -185,6 +185,20 @@ footer p {
     background-color: rgb(107, 22, 22);
 }
 
+@media print {
+
+    .bar,
+    .colon,
+    .music,
+    #print-button {
+        display: none !important;
+    }
+
+    .technology-name {
+        text-align: left;
+    }
+}
+
 /* Media Queries for Responsive Design */
 @media only screen and (min-width: 768px) {
     header {
@@ -214,5 +228,24 @@ footer p {
         width: 100px;
         height: 100px;
         margin-right: 20px;
+    }
+}
+
+@media only screen and (min-width: 1052px) {
+
+    /* place button at the end */
+    #print-button {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 9999;
+        /* Ensure the button appears above other content */
+        background-color: rgb(107, 22, 22);
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
     }
 }
